@@ -1,0 +1,766 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;1,8..144,100&display=swap');
+
+:root {
+    --primaryFont :font-family: 'Roboto Serif', serif;                      
+    --stdBlack: #000000;
+    --stdWhite: #ffffff;
+    --EggnogColor: #fffbf2;
+    --grayColor: #808080;
+    --stdYellow: #cbd728;
+    --pumpkinColor: #da8529;
+    --orangeColor: #ff6347;
+    --syrupColor: #311f1c;
+    --stdVoilet: #9856d4;
+    --carnationColor: #ffc0cb;    
+}
+
+*{
+    margin: 0;
+    font-family: var(--primaryFont);
+    font-size: 16px;
+    box-sizing: border-box;   
+}
+
+body{
+    background-color:var(--EggnogColor);
+}
+.mainNavigation{
+    display: flex;
+    background-color:var(--syrupColor);
+    /* position: fixed; */
+    height: 80px;   
+}
+
+.logo{
+    color: var(--stdWhite);
+    font-size: 30px;
+}
+
+.noise{
+    background-color: var(--grayColor);
+    border: none;
+    display: inline-block;
+    padding: 15px 17px;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;   
+}
+
+.mainNav {
+    display: none;
+}
+
+.mainNavigation {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 5px var(--stdBlack);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: var(--stdWhite);
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.main{
+    background-image:url(../images/background.jpeg); 
+    height: 300px;
+    background-position: bottom;
+}
+
+.midium{
+    text-align:center;
+    padding-top: 60px;
+    color: var(--stdWhite);
+    height: 150px;
+}
+
+.font-main{
+    color: var(--stdYellow);
+    font-size: 25px;
+}
+
+.coffeefont{
+    color: var(--stdWhite);
+    font-weight:900;
+    font-size: 60px;
+}
+
+.since{
+    font-size: 25px;
+}
+
+/* About Section */ 
+
+.aboutsection{
+    height: 77rem;
+    
+}
+
+.colomn{
+    display: flex;
+    justify-content: center;
+}
+
+.vertLine{
+    background-color: var(--pumpkinColor);
+    height: 80px;
+    width: 1.5%;
+    border-radius: 50px;
+}
+
+.main-about{
+    text-align: center; 
+    padding: 20px;
+}
+
+.about{
+    color: var(--stdVoilet);
+    font-size:20px;
+}
+
+.serving-font,.storyVision,.coff-deatail{
+    color: var(--syrupColor);
+    font-size:30px;
+}
+
+.coffDeatail{
+    font-size: 18px;
+    padding-top: 10px;
+    opacity: 0.9;
+}
+
+.visionpara,.visionparas{
+    padding-top: 15px;   
+    padding-bottom: 10px;
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+.btn,.btns{
+    background-color: var(--syrupColor);
+    height: 35px;   
+    color: var(--stdWhite);
+}
+
+.stores{
+    padding: 20px;
+}
+
+.coffs{
+    display: flex;
+    justify-content: center;
+}
+.coffees{
+    width: 300px;
+    height: 300px;
+    padding-bottom: 20px;
+}
+
+.doller{
+    font-size: 20px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+.btns{
+    background-color: var(--pumpkinColor);
+    color: var(--stdBlack);
+    border: none;
+}
+
+/* Service-Section */
+
+.service{
+    height: 138rem;
+}
+
+.door,.rest,.address{
+    padding-top: 50px;
+}
+.commonImg{
+    height: 300px;
+    
+}
+.img-head{
+    color: var(--syrupColor);
+    padding-top: 10px;
+    font-size: 25px;
+    text-align: left;
+}
+
+.img-para{
+    text-align: left;
+    font-size: 20px;
+    opacity: 0.6;
+    padding-top: 10px;  
+}
+
+/* Sunday-Offer-Section */
+
+.offer{
+    background-image: url(../images/background.jpeg );
+    background-position: bottom;
+    height: 500px;  
+    text-align: center; 
+    padding-top: 100px;
+}
+
+.off-font,.off-30{
+    color: var(--pumpkinColor);
+    font-size:40px;   
+}
+
+.sunday-font,.online-res,.bookfont{
+    padding-top: 10px;
+    color: var(--stdWhite);
+    font-size: 30px;
+}
+
+.jan-font,.reser-para{
+    padding-top: 10px;
+    color: var(--stdWhite);
+    font-size: 20px;
+}
+
+.janMsg{
+    padding-top: 15px;
+}
+.text-message,.buttun,.endtype,.signup{
+    height:40px;
+}
+
+.buttun,.signup{
+    background-color: var(--orangeColor);
+    color: var(--stdWhite);
+    margin-left: -7px;  
+}
+
+/* Menu-Section */
+
+/* .menu{
+} */
+
+.hot-cold{
+    padding-bottom: 40px;
+    text-align: left;
+    font-size:30px;
+}
+
+.menu-bar{
+    padding-bottom: 40px;
+}
+
+.menu-bar{
+    display: flex; 
+}
+
+.menu-1{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+}
+
+.circle{
+    height: 50px;
+    width: 50px;    
+    background-color: var(--carnationColor);
+    color: var(--stdWhite);
+    margin-left: -40px;
+    font-size: 20px;
+    border-radius: 100px;
+    padding-top:11px;   
+}
+
+ .black-menu{
+    width: 60%;
+    text-align:left;
+    padding-left: 15px;
+}
+
+.black-coffee,.black-para{
+    font-size: 20px;
+}
+
+.black-coffee,.bookfont{
+    padding-bottom: 10px;
+}
+
+.black-para{
+    opacity: 0.7;
+}
+
+/* reservation section */
+
+.reservation{
+    height: 70rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.bg{
+    background-color: var(--carnationColor);    
+    background-position: center;
+    height: 1050px;
+    width: 80%;
+    border-radius: 30px;
+}
+
+.reserv{
+    padding: 50px;
+}   
+
+.online-res{
+    color: var(--stdWhite);
+}
+
+.reser-para{
+    color: var(--stdBlack);
+    font-size:18px;
+    opacity: 0.8;
+}
+
+.table{
+    text-align: center;
+}
+
+.text,.textcont{
+    height: 40px;
+    width: 250px;
+    border-color: var(--stdBlack);
+    background-color: transparent;
+    color: var(--stdBlack);
+    padding-left: 25px;
+}
+
+.bookbtn,.btnmsg{
+    width: 80%;
+    height: 40px;
+    background-color: var(--pumpkinColor);
+}
+ 
+/* contact Section */
+.contact{
+    height: 80rem;
+
+}
+
+figure{
+    padding-bottom: 40px;
+}
+.address{
+    text-align: center;
+}
+
+.location{
+    height: 30px;
+    width: 30px;
+    
+}
+
+.phone{
+    font-size: 20px;
+}
+
+.mapview{
+    display: flex;
+    justify-content: center;
+}
+
+.map{
+    height: 350px;
+    width: 90%;
+}
+
+.btnmsg,.textcont,.text,.bookbtn{
+    margin-top: 10px;
+    
+}
+
+.btnmsg{
+    width: 40%;
+}
+.container{
+    text-align: center;
+    padding-top: 20px;  
+    padding: 20px;
+}
+
+.container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+ /* section footer */
+
+ .footer{
+    background-image: url(../images/background.jpeg);
+    background-position: top;
+    padding-left: 20px;
+    height: 630px;
+}
+
+.gettouch{
+    padding-top: 100px;
+}   
+
+.touch{
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: var(--stdWhite);
+    letter-spacing: 1px;
+}
+
+.geoIcon{
+    display: block;
+    padding-bottom: 10px;
+}
+
+.locat{
+    padding-bottom: 20px;
+    color: var(--stdWhite);
+    display: block;
+}
+
+.newpara{
+    color: var(--stdWhite);
+    padding-bottom: 20px;
+    width: 90%;
+}
+
+.medialogo{
+    display: flex;
+    gap: 10px;
+}
+
+.over{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.copyright{
+    padding-top: 20px;
+    text-align: center;
+    width: 90%;
+    color: var(--stdWhite);
+}
+
+.domain{
+    color: var(--pumpkinColor);
+}
+
+
+/* tab-view */
+
+@media (min-width: 768px){
+   
+.mainNav {
+    display: none;
+}
+.mainNavigation{
+    display: flex;
+    background-color: var(--syrupColor);
+    /* position: fixed; */
+    height: 100px;
+}
+.logo{
+   font-size: 45px;
+}
+.noise{
+    width: 55px;
+    height: 52px;
+}
+.main{
+    height: 600px;
+}
+.midium{
+    padding-top: 15rem;
+}
+.aboutsection,.service,.menu{
+    /* height: 80rem; */
+    padding: 70px;
+}
+.vertLine{
+   height: 100px;
+   width: 5px; 
+}
+.about{
+    font-size: 25px;
+}
+.serving-font,.off-font,.off-30{
+    font-size: 50px;
+}
+.storyVision,.sunday-font,.hot-cold,.bookfont{
+    font-size: 40px;
+}
+.commons{
+    display: flex;
+}
+.text-message{
+    height: 50px;
+    width: 30%;
+}
+.buttun{
+    height: 50px;
+    width: 10%;
+}
+.menu-1{
+    height: 170px;
+    width: 27%;
+}
+.circle{
+    padding-top: 20px;
+    font-size: 25px;
+    height: 80px;
+    width: 12.5%;
+}
+.service{
+    height: 110rem;
+}
+
+.img-head,.img-para{
+    padding-left: 15px;
+}
+.comon{
+    padding-top: 50px;
+}
+.text,.bookbtn{
+    width: 80%;
+    height: 70px;
+}
+.btnmsg{
+    width: 50%;
+}
+.reser-para{
+    font-size:20px;
+}
+.lorem{
+    font-size: 18px;
+}
+.address{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact{
+    height: 60rem;
+    padding: 70px;
+}
+.mapview{
+    width: 80%;
+}
+.mapRadio{
+    display: flex;
+}
+.container{
+    width: 50%;
+}
+.footer{
+    height: 350px;
+    padding-left: 10px;
+}
+.touch{
+    width: 100%;
+}
+.gettouch{
+    text-align: center;
+    display: flex;
+}
+.touch{
+    font-size: 16px;
+}
+.medialogo{
+    padding-left: 100px;
+}
+.newpara{
+    width: 90%;
+}
+
+}
+
+/* Desktop View */
+
+@media(min-width:992px){
+
+.nav-link:hover{
+    color: var(--stdYellow);
+}
+.mainNav {
+    display: block;
+    width: 50%;
+}
+.nav-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+.main{
+    background-size: cover;
+}
+.logo{
+   font-size: 50px;
+}
+.noise{
+    display: none;
+}
+.main{
+    height: 900px;
+}
+
+.font-main{
+    font-size: 35px;
+}
+.coffeefont{
+    font-size: 115px;
+}
+.serving-font{
+    font-size: 60px;
+}
+.since{
+    font-size: 30px;
+}
+.colomn{
+    font-size: 100px;    
+}
+.stores,.cup-coffee{
+    display: flex;   
+}
+.stores{
+    padding: 110px;
+}
+.storyVision{
+    font-size:40px;
+}
+.coffDeatail{
+    width: 45%;
+}
+.visionpara{
+    opacity: 0.5;
+}
+.visionparas{
+    width: 60%;
+}
+.doller{
+    letter-spacing: 1px;
+}
+.coffees,.coffees{
+    margin-left: -300px;
+    margin-top: -100px; 
+    height: 600px;
+    width: 600px;
+} 
+.door{
+    padding-top: 0px;
+}
+.aboutsection{
+    height: 60rem;
+}
+.service{
+    height: 75rem;
+}
+.off-font,.off-30{
+    font-size: 60px;
+}
+.sunday-font{
+    font-size: 40px;
+}
+.jan-font{
+    font-weight: lighter;
+}
+.text-message,.buttun{
+    width: 20rem;
+    height: 3rem;
+}
+.menu{
+    height: 75rem;
+}
+.reservation{
+    padding-top: 50px;
+    height: 45rem;
+}
+.buttun{
+    width: 5rem;    
+}
+.coffeetag,.est{
+    padding: 110px;
+}
+.menu-1{
+    width: 30%;
+}
+.circle{
+    padding-top: 25px;
+    width: 14%;
+}
+.door,.quality{
+    display:flex;
+    width: 100%;
+}
+.rest{
+    display: flex;  
+    padding-top: 0px;
+}
+.black-para{
+    width: 80%;
+}
+.diam{
+    padding-top: 100px;
+}
+.bg{
+    height: 42rem;
+    width: 80%;
+}
+.sit{
+    display: flex;
+}
+.reserv,.table{
+    padding: 80px;
+}
+.text{
+    width: 25rem;
+}  
+.contact{
+    height: 65rem;
+}
+.map{
+    margin-left: 70px;
+    height: 400px;  
+    width: 100%;
+}
+.textcont{
+    margin-top: 25px;
+    width: 70%;
+    height: 50px;
+}
+.copyright{
+    padding-left: 120px;
+   }
+.locat,.locate{
+    width: 25%;
+}
+.signup{
+    width: 75px;
+}
+.gettouch{
+    justify-content:space-evenly;
+    padding-top: 150px;
+}
+.medialogo{
+    padding-left: 125px;
+}
+.footer{
+    height: 24rem;
+}
+
+}
